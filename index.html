@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Tip calculator app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="logo-container">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="container" id="container_card">
+        <div class="calculator-card">
+          <div class="row cal_section p-4">
+            <div class="col-md-7">
+              <div class="input-container">
+                <label for="bill">Bill</label>
+                <div class="input-wrapper pt-md-2">
+                  <img
+                    src="./images/icon-dollar.svg"
+                    alt="dollar icon"
+                    class="input-icon"
+                  />
+                  <input type="text" id="bill" placeholder="0" />
+                </div>
+              </div>
+
+              <p class="pt-4">Select Tip %</p>
+              <div class="filter_buttons">
+                <button class="filter_btn" id="first_btn">5%</button>
+                <button class="filter_btn">10%</button>
+                <button class="filter_btn">15%</button>
+                <button class="filter_btn mt-md-2">25%</button>
+                <button class="filter_btn mt-md-2">50%</button>
+                <input
+                  type="number"
+                  id="custom_input"
+                  class="filter_btn custom_input mt-md-2"
+                  placeholder="Custom"
+                />
+              </div>
+
+              <div class="input-container pt-5">
+                <div class="label-container">
+                  <label for="People">Number of People</label>
+                  <span class="error-message">Can't be zero</span>
+                </div>
+
+                <div class="input-wrapper pt-md-2">
+                  <img
+                    src="./images/icon-person.svg"
+                    alt="person icon"
+                    class="input-icon"
+                  />
+                  <input
+                    type="text"
+                    name="People"
+                    id="People"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 p-0">
+              <div class="result p-4">
+                <div class="tip_amount pt-md-2">
+                  <div class="tip_txt">
+                    <p class="para_txt1">Tip Amount</p>
+                    <p class="para_txt2">/ person</p>
+                  </div>
+                  <div class="tip_num">
+                    <p class="para_num" id="tip_amnt">$0.00</p>
+                  </div>
+                </div>
+
+                <div class="tip_amount py-md-4">
+                  <div class="tip_txt">
+                    <p class="para_txt1">Total</p>
+                    <p class="para_txt2">/ person</p>
+                  </div>
+                  <div class="tip_num">
+                    <p class="para_num" id="tot_amnt">$0.00</p>
+                  </div>
+                </div>
+                <button class="reset mt-md-5">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
