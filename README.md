@@ -20,7 +20,7 @@ This is my solution to the [Tip Calculator App challenge on Frontend Mentor](htt
 
 ## 🔗 Links
 
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://tip-calculator-chi-rouge-98.vercel.app/)
 - [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
 ## 🛠️ Built With
